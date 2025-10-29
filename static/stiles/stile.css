@@ -61,7 +61,7 @@ body{
 .menu-left-side{
     height: 100%;
     display:block;
-    min-width: 130px;
+    min-width: 135px;
 }
 
 .menu-left-side a{
@@ -86,7 +86,7 @@ body{
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     animation-delay: 0s;
-    min-width: calc(100vw - 175px);
+    min-width: calc(100vw - 180px);
 }
 
 .main-content h1{
