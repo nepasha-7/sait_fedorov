@@ -86,7 +86,7 @@ body{
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     animation-delay: 0s;
-    min-width: calc(100vw - 185px);
+    min-width: calc(100vw - 180px);
 }
 
 .main-content h1{
