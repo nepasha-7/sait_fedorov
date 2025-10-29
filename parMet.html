@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-light-theme="light" data-dark-theme="dark" data-color-mode="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedorov</title>
+    <link rel="stylesheet" href="static/stiles/stile.css">
+    <link href="node_modules/@primer/css/dist/primer.css" rel="stylesheet" />
+    <style>
+        @import '@primer/primitives/dist/css/functional/themes/dark.css';
+        @import '@primer/primitives/dist/css/functional/themes/light.css';
+    </style>
+</head>
+
+<body>
+    <div class = "site-head py-2">
+        <img class = "logo mx-2" src = "static/images/logo.jpg">
+    </div>
+    <div class = "main-part">
+        <div class = "drop">
+            <div class = "menu-horizontal">
+                <a href ="index.html" >Главная</a>
+                <a href ="usefulLinks.html" >Полезные ссылки</a>
+                <a href ="primerHere.html" >Применение primer</a>
+            </div>
+            <button class = " menu-button y-4">&#9776;</button>
+        <div class = "menu-left-side">
+            <a href ="index.html" class = "px-2 py-1">Вступление</a>
+            <a href ="parMet.html" class = "px-2 py-1">Методы парсинга</a>
+            <a href ="parIns.html" class = "px-2 py-1">Инструменты для парсинга</a>
+            <a href ="parDef.html" class = "px-2 py-1">Защита от парсинга</a>
+            <a href ="parUrid.html" class = "px-2 py-1">Юридические аспекты</a>
+        </div>
+    </div>
+    <div class = "main-content p-3">
+        <h1 class = "mb-5">Методы парсинга</h1>
+        <h3 class = "mb-3">Ручной и консольный парсинг</h3>
+    <div class = "abz mb-6">
+	Этими методами пользуются, когда либо не умеют пользоваться другими методами, либо не хотят тратить время на разработку и/или настройку парсерского по.<br>
+	Суть метода проста: при помощи браузера открывается сайт и копируется его содержимое.<br>
+	Отличие консольного и ручного парсига состоит в том что для консольного метода используются запросы в консоли.
+    </div>
+    <img class = "abz-img mb-6" src = "static/images/stok-4.jpeg">
+    <h3 class = "mb-3">Статический парсинг</h3>
+    <div class = "abz mb-6">
+	Самый распространенный метод парсинга, подходит для сайтов которые сразу загружают все данные на одной странице.<br>
+	Парсер делает запрос на сервер, получает html код страницы и вытаскивает из него контент.
+    </div>
+    <img class = "abz-img mb-6" src = "static/images/stok-5.jpg">
+    <h3 class = "mb-3">Динамический парсинг</h3>
+    <div class = "abz mb-6">
+	Более продвинутый метод парсинга.<br>
+	При таком парсинге исполняется javascrypt, что позволяет просматривать данные подгружаемые после загрузки основной страницы.
+    </div>
+    <h3 class = "mb-3">Парсинг при помощи Api</h3>
+    <div class = "abz mb-6">
+	Данный метод производится предусмотренными разработчиками интернет ресурса инструментами.<br>
+	Иногда этим методом не пользуются даже при его наличии т.к. доступ к API может быть платным или с недостаточным функционалом.<br>
+	В некоторых случаях даже разработчик сайта парсит свой собственный сайт не пользуясь API (Например HH.ru).
+    </div>
+</div>
+</div>
+<div class = "podval">
+    <div class = "podval-line">Связатся с автором сайта</div>
+    <div class = "podval-line">Почта: <a>pavel.fuodorov@mail.ru</a></div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-light-theme="light" data-dark-theme="dark" data-color-mode="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedorov</title>
+    <link rel="stylesheet" href="static/stiles/stile.css">
+    <link href="node_modules/@primer/css/dist/primer.css" rel="stylesheet" />
+    <style>
+        @import '@primer/primitives/dist/css/functional/themes/dark.css';
+        @import '@primer/primitives/dist/css/functional/themes/light.css';
+    </style>
+</head>
+
+<body>
+    <div class = "site-head py-2">
+        <img class = "logo mx-2" src = "static/images/logo.jpg">
+    </div>
+    <div class = "main-part">
+        <div class = "drop">
+            <div class = "menu-horizontal">
+                <a href ="index.html" >Главная</a>
+                <a href ="usefulLinks.html" >Полезные ссылки</a>
+                <a href ="primerHere.html" >Применение primer</a>
+            </div>
+            <button class = " menu-button y-4">&#9776;</button>
+        <div class = "menu-left-side">
+            <a href ="index.html" class = "px-2 py-1">Вступление</a>
+            <a href ="parMet.html" class = "px-2 py-1">Методы парсинга</a>
+            <a href ="parIns.html" class = "px-2 py-1">Инструменты для парсинга</a>
+            <a href ="parDef.html" class = "px-2 py-1">Защита от парсинга</a>
+            <a href ="parUrid.html" class = "px-2 py-1">Юридические аспекты</a>
+        </div>
+    </div>
+    <div class = "main-content p-3">
+        <h1 class = "mb-5">Инструменты для парсинга</h1>
+        <h3 class = "mb-3">Ручной и консольный парсинг</h3>
+    <div class = "abz mb-6">
+	Для парсинга этим методами используются: браузер, различные расширения и программы.<br>
+	Например программы с поддержкой OCR нужны для считывания текста с изображений.
+    </div>
+    <h3 class = "mb-3">Статический парсинг</h3>
+    <div class = "abz mb-6">
+	Для него используют разные инструменты — программы, библиотеки и сервисы.<br><br>
+	Библиотеки для python:<br>
+	BeautifulSoup — библиотека для извлечения данных из HTML и XML, подходит для простых задач и небольших проектов. Позволяет создавать DOM-дерево элементов и извлекать данные.<br>
+	Scrapy — фреймворк для парсинга данных из HTML-страниц, представляет собой набор автономных «пауков» (веб-краулеров) с заданными инструкциями. Поддерживает асинхронные запросы, обработку ошибок и интеграцию с прокси-сервисами.<br>
+	Selectolax — быстрый парсер HTML-страниц, использует CSS-селекторы для извлечения информации из тегов.
+    </div>
+	<img class = "abz-img mb-6" src = "static/images/stok-6.webp">
+    <h3 class = "mb-3">Динамический парсинг</h3>
+    <div class = "abz mb-6">
+	Чаще всего используются рукописные скрипты в связке с браузером или онлайн сервисами.<br>
+	Выбор инструмента зависит от языка программирования и поставленных задач.<br><br>
+	Для python:<br>
+	Selenium — библиотека для автоматизации веб-браузера, позволяет программно управлять браузером, эмулировать действия реального пользователя.<br>
+	Playwright — универсальная библиотека headless-браузера для автоматизации веб-браузеров, поддерживает браузеры Chromium, WebKit и Firefox.<br><br>
+	Для  Node.js:<br>
+	Puppeteer — инструмент от Google, предоставляет API для управления Chrome и Chromium через протокол DevTools.<br><br>
+	Для Java:<br>
+	HtmlUnit — «безголовый» браузер, позволяет взаимодействовать с веб-страницами без необходимости запускать реальный браузер. <br><br>
+	Так же существуют онлайн сервисы:<br>
+	Octoparse — Облачный сервис с визуальным конструктором: пользователь «обучает» систему, выбирая нужные элементы, а алгоритм генерирует код.<br>
+	eScraper — Сервис ориентирован на электронную коммерцию.<br>
+	ParseHub — Использует машинное обучение для автоматического распознавания шаблонов, включая динамически загружаемый контент.<br>
+	XMLDATAFEED — Инструмент для парсинга любой информации, которую можно собрать законным способом. Особенность — отсутствие готовых решений, под каждый запрос команда разработчиков создаёт уникальный парсер для нужной задачи.
+    </div>
+    <img class = "abz-img mb-6" src = "static/images/stok-7.png">
+    <h3 class = "mb-3">Парсинг при помощи Api</h3>
+    <div class = "abz mb-6">
+	Для реализации такого метода чаще всего используют API сайта и скрипт на python/C#. Скрипт чаще всего пишется с применением библиотек, которые упращают взамодействие с API.<br>
+	Dakword/WBSeller — Библиотека для работы с Wildberries API, доступна на GitHub.<br>
+	ozon-api — асинхронная библиотека для работы с API Ozon Seller.
+    </div>
+<h3 class = "mb-3">Обзор некоторых сервисов парсинга для социальных сетей</h3>
+<div class = "abz-img mb-6" style="position:relative; ">
+<img src="static/images/ground480.png" style="width: 100%;"/>
+    <iframe width="100%" height="100%"  src="https://vk.com/video_ext.php?oid=-44750488&id=456239174&hd=2&t=1m08s" frameborder="0" allowfullscreen="" allow="encrypted-media; fullscreen; picture-in-picture" style="position: absolute; top: 0; left: 0; padding: 5px;">
+    </iframe>
+</div>
+</div>
+</div>
+<div class = "podval">
+    <div class = "podval-line">Связатся с автором сайта</div>
+    <div class = "podval-line">Почта: <a>pavel.fuodorov@mail.ru</a></div>
+</div>
+</body>
+
+</html>

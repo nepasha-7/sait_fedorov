@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-light-theme="light" data-dark-theme="dark" data-color-mode="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedorov</title>
+    <link rel="stylesheet" href="static/stiles/stile.css">
+    <link href="node_modules/@primer/css/dist/primer.css" rel="stylesheet" />
+    <style>
+        @import '@primer/primitives/dist/css/functional/themes/dark.css';
+        @import '@primer/primitives/dist/css/functional/themes/light.css';
+    </style>
+</head>
+
+<body>
+    <div class = "site-head py-2">
+        <img class = "logo mx-2" src = "static/images/logo.jpg">
+    </div>
+    <div class = "main-part">
+        <div class = "drop">
+            <div class = "menu-horizontal">
+                <a href ="index.html" >Главная</a>
+                <a href ="usefulLinks.html" >Полезные ссылки</a>
+                <a href ="primerHere.html" >Применение primer</a>
+            </div>
+            <button class = " menu-button y-4">&#9776;</button>
+        <div class = "menu-left-side">
+            <a href ="index.html" class = "px-2 py-1">Вступление</a>
+            <a href ="parMet.html" class = "px-2 py-1">Методы парсинга</a>
+            <a href ="parIns.html" class = "px-2 py-1">Инструменты для парсинга</a>
+            <a href ="parDef.html" class = "px-2 py-1">Защита от парсинга</a>
+            <a href ="parUrid.html" class = "px-2 py-1">Юридические аспекты</a>
+        </div>
+    </div>
+    <div class = "main-content p-3">
+        <h1 class = "mb-5">Защита от парсинга</h1>
+        <h3 class = "mb-3">Ручной и консольный парсинг</h3>
+    <div class = "abz mb-6">
+	От этого метода существует множество способов защиты.<br><br>
+	Запрет на копирование в буфер обмена.<br>
+	На сайт добавляют небольшой скрипт, который разрешает копирование текста, но не позволяет вставить его в буфер обмена.<br><br>
+	Подключение reCAPTCHA.<br>
+	Сервис reCAPTCHA и всевозможные аналоги дают крайне низкую эффективность при защите от парсинга и спама.<br><br>
+	Добавление ссылки при копировании текста.<br>
+	На сайт внедряют небольшой скрипт, который автоматом привязывает к скопированному тексту ссылку на источник.<br><br>
+	Запрет на копирование.<br>
+	Вы можете создать отдельный CSS-стиль, запрещающий выделение текста. Речь идёт о небольшом микрокоде, с которым легко разобраться самому или поручить эту задачу программисту.
+    </div>
+    <img class = "abz-img mb-6" src = "static/images/stok-2.jpg">
+    <h3 class = "mb-3">Статический парсинг</h3>
+    <div class = "abz mb-6">
+	Блокировка ботов по IP.<br>
+	Это один из способов противодействия парсингу, когда данные крадут постоянно и, как правило, в большом объёме. Если с одного IP идет подозрительно много траффика, то можно просто заблокировать его.<br><br>
+	Использование DMCA protected.<br>
+	Речь идёт о платном сервисе мониторинга контента. Подключившись к вашему сайту, он периодически совершает обход и проверяет страницы на предмет появления копий.
+    </div>
+    <img class = "abz-img mb-6" src = "static/images/stok-3.png">
+    <h3 class = "mb-3">Динамический парсинг</h3>
+    <div class = "abz mb-6">
+	Использование скрипта автозамены символов.<br>
+	Замена идет в 3 этапа: 1)Замена символов в html коде (или в тексте подгружаемых данных) 2) Скрипт при отображениии текста отображает текст в нормальном виде (для чтения пользователя) 3) Последний скрипт шифрует текст при копировании.<br><br>
+	Брендирование контента.<br>
+	Статьи нужно делать более персонализированными, писать от лица бренда и чаще упоминать его название, причём делать это так, чтобы бегло подчистить текст было как можно сложнее.
+    </div>
+</div>
+</div>
+<div class = "podval">
+    <div class = "podval-line">Связатся с автором сайта</div>
+    <div class = "podval-line">Почта: <a>pavel.fuodorov@mail.ru</a></div>
+</div>
+</body>
+
+</html>
